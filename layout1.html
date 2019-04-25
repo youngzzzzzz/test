@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>선영이의 웹사이트</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="common.css" />
+	<meta name="keywords" content="개인 웹사이트, 콘텐츠 프로그래밍, html, css" />
+    <meta name="subject" content="선영이의 웹사이트" />
+    <meta name="descriptioin" content="html css관련 연습 및 레포트가 있는 웹사이트" />
+    <meta name="author" content="안선영" />
+    <meta name="robots" content="noindex" />
+    <meta name="copyright" content="안선영" />
+	<meta />
+  <style type="text/css">
+		#wrap1{
+			margin-left: 200px;
+		}
+    #content_title{
+      color: #ff4e50;
+      font-size: 30px;
+      margin: 0px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    #content1_list{
+      position: relative;
+      overflow: auto;
+      margin:0px;
+      padding: 0px;
+      margin-bottom: 80px;
+    }
+    #content1_list li{
+      float: left;
+      list-style: none;
+      background-color: white;
+      margin:0px;
+      margin-bottom: 20px;
+      padding:0px;
+      height: 175px;
+      width: 1070px;
+
+      border-right: solid 1px #ccc;
+      border-bottom: solid 1px #ccc;
+      border-top: dotted 1px #cccccc;
+      border-left: dotted 1px #cccccc;
+    }
+    .content1_air{
+      font-size: 10px;
+      margin-left: 20px;
+    }
+    .content1_time{
+      font-size: 30px;
+      margin-left: 35px;
+    }
+    .content1_place{
+      margin-left: 145px;
+    }
+    .content1_price{
+      font-size: 50px;
+      color: #ff4e50;
+      margin-left: 470px;
+      display: inline;
+        position: relative;
+        top: -115px;
+    }
+    #content1_list li img{
+      display: block;
+      float: left;
+      height: 175px;
+    }
+    .content1_go{
+      font-size: 20px;
+      color: #ffffff;
+      margin-left: 954px;
+      display: inline;
+        position: relative;
+        top: -158px;
+        background-color: #ff4e50;
+        padding: 74px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .content1_go:link{color:#ffffff; text-decoration: none;} /*링크*/
+    .content1_go:visited{color:#ffffff; text-decoration: none;} /*방문했던 사이트*/
+    .content1_go:hover{color:#ffffff; text-decoration: none;} /*마우스 커서를 올렸을 때*/
+    .content1_go:active{color:#ffffff; text-decoration: none;} /*마우스를 눌렀을때(down)*/
+    .content1_go:focus{color:#000000; text-decoration: none;} /*tab index 포커싱 되었을 때*/
+  </style>
+
+
+</head>
+<body>
+
+		<div id="main_navigation">
+			 <center>	<a href="index.html"><img src="main.jpg" /></a> </center>
+				<strong>
+				<a class="link_button" href="layout1.html">비용</a>&nbsp; &nbsp;
+				<a class="link_button" href="layout2.html">일정</a>&nbsp; &nbsp;
+				<a class="link_button" href="layout3.html">명소</a> &nbsp;
+				</strong>
+            <hr />
+		</div>
+
+    <div id="wrap1">
+    <div id="content1">
+      <h2 id="content_title">괌, 얼마면 될까?</h2>
+      <p>
+        여행기간 2019. 02. 08 ~ 2018. 02. 15 기준
+      </p>
+      <ul id="content1_list">
+        <li>
+          <img src="layout4_airplane_title.jpg" />
+          <a class="content1_air">진에어</a>
+          <br />
+          <a class="content1_time">오후 09:10 → 오전 02:25 +1</a>
+          <br />
+          <a class="content1_place">ICN → GUAM</a>
+          <br />
+          <a class="content1_air">진에어</a>
+          <br />
+          <a class="content1_time">오전 03:35 → 오전 07:30</a>
+          <br />
+          <a class="content1_place">GUAM → ICN</a>
+          <br />
+          <a class="content1_price">₩261,400</a>
+          <a class="content1_go"  href="https://www.jinair.com/booking/index">예매GO!</a>
+        </li>
+        <li>
+          <img src="layout4_hotel_title.jpg" />
+					<br /> <br />
+          <a class="content1_air">쉐라톤 라구나 괌 리조트</a>
+          <br />
+          <a class="content1_time">2019. 02. 12 ~ 2019. 02. 14</a>
+          <br />
+          <a class="content1_place">2박3일</a>
+          <br />  <br />  <br />
+          <a class="content1_price">₩203,935</a>
+          <a class="content1_go" href="http://www.hanatour.com/asp/booking/lodge/lg-30000.asp?hanacode=am_os_free">예매GO!</a>
+        </li>
+        <li>
+          <img src="airbnb.jpg" />
+					<br /> <br />
+          <a class="content1_air">에어비앤비</a>
+          <br />
+          <a class="content1_time">2019. 02. 09 ~ 2019. 02. 12</a>
+          <br />
+          <a class="content1_place">3박4일</a>
+          <br /> <br /> <br />
+          <a class="content1_price">₩220,000</a>
+          <a class="content1_go" href="https://www.airbnb.co.kr/a/?af=43720035&c=.pi0.pk5917949885_24559275845_c_50025075125&sem_position=1t1&sem_target=kwd-50025075125&location_of_interest=&location_physical=1009886&ghost=true&gclid=Cj0KCQjwkoDmBRCcARIsAG3xzl-G4RY8w2GGIIYAiDlDqtv-FuFIZJxt1EwlsaG_nYkekV1aEnE4J_saAhm_EALw_wcB">예매GO!</a>
+        </li>
+        <li>
+          <img src="dolpin.jpg" />
+					<br /> <br />
+          <a class="content1_air">마이리얼트립</a>
+          <br />
+          <a class="content1_time">돌핀크루즈</a>
+          <br />
+          <a class="content1_place">오전 11시 ~ 오후 4시</a>
+          <br /> <br /> <br />
+          <a class="content1_price">₩44,400</a>
+          <a class="content1_go" href="https://www.myrealtrip.com/offers/22627">예매GO!</a>
+        </li>
+        <li>
+          <img src="travelinsurance.png" />
+					<br /> <br />
+          <a class="content1_air">마이뱅크 여행자보험</a>
+          <br />
+          <a class="content1_time">2019. 02. 09 ~ 2019. 02. 14</a>
+          <br />
+          <a class="content1_place">5박6일</a>
+          <br /> <br /> <br />
+          <a class="content1_price">₩7,682</a>
+          <a class="content1_go" href="https://travel.mibank.me/layer.php">예매GO!</a>
+        </li>
+        <li>
+          <img src="rant.jpg" />
+					<br /> <br />
+          <a class="content1_air">밸류렌트카</a>
+          <br />
+          <a class="content1_time">2019.02.09 ~ 2019.02.12</a>
+          <br />
+          <a class="content1_place">3박 4일</a>
+          <br /><br /><br />
+          <a class="content1_price">₩89,321</a>
+          <a class="content1_go" href="https://now-guam.com/kr/?gclid=Cj0KCQjwkoDmBRCcARIsAG3xzl8f1z2B7mis4WNDXnzVN5n5NYoFGbCCXIBi5bIeXjCY53Mzn0gHT9gaAsT2EALw_wcB">예매GO!</a>
+        </li>
+        <li>
+          <img src="exchang.jpg" />
+
+          <a class="content1_air">토스 환전</a>
+          <br />
+          <a class="content1_time">약 30만원</a>
+          <br />
+          <a class="content1_air">기업은행환전</a>
+          <br />
+          <a class="content1_time">약 50만원</a>
+          <br /><br /> <br />
+          <a class="content1_price">₩859,060</a>
+          <a class="content1_go" href="https://m.kebhana.com/cont/hidden/exchange/?source=naverlink">예매GO!</a>
+        </li>
+      </ul>
+    </div>
+		</div>
+
+		<div id="wrap">
+		<div id="main_footer">
+				<hr />
+					<p>
+						Kaywon University of Art and Design
+						<br />
+						Digital Media Design
+						<br />
+						Web Standard Publishing
+						<br />
+						21761066 An Seon Yeong
+					</p>
+					<img src="main_logo.jpg" />
+		</div>
+	</div>
+</body>
+</html>
