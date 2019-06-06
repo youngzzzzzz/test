@@ -1,50 +1,351 @@
-<!--21761066 안선영-->
 <!DOCTYPE html>
-<html>
-<head>
-	<title>WELCOME TO GUAM</title>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="common.css" />
-	<meta name="keywords" content="개인 웹사이트, 콘텐츠 프로그래밍, html, css" />
-    <meta name="subject" content="선영이의 웹사이트" />
-    <meta name="descriptioin" content="html css관련 연습 및 레포트가 있는 웹사이트" />
-    <meta name="author" content="안선영" />
-    <meta name="robots" content="noindex" />
-    <meta name="copyright" content="안선영" />
-	<meta />
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body{
+        background-color : #f8fafc;
+        font-family: "맑은 고딕", "돋움";
+        font-size : 100%;
+      }
+      .anchor1:link{color:#484848; text-decoration: none;} /*링크*/
+      .anchor1:visited{color:#484848; text-decoration: none;} /*방문했던 사이트*/
+      .anchor1:hover{color:#484848; text-decoration: none;} /*마우스 커서를 올렸을 때*/
+      .anchor1:active{color:#484848; text-decoration: none;} /*마우스를 눌렀을때(down)*/
+      .anchor1:focus{color:#000000; text-decoration: none;} /*tab index 포커싱 되었을 때*/
 
-</head>
-<body>
+      @media only screen and (min-width: 600px) {
+        .c_m_1 {width:8.33%}
+        .c_m_2 {width:16.66%}
+        .c_m_3 {width:25%}
+        .c_m_4 {width:33.33%}
+        .c_m_5 {width:41.66%}
+        .c_m_6 {width:50%}
+        .c_m_7 {width:58.33%}
+        .c_m_8 {width:66.66%}
+        .c_m_9 {width:75%}
+        .c_m_10 {width:83.33%}
+        .c_m_11 {width:91.66%}
+        .c_m_12 {width:100%}
+      }
+      @media only screen and (min-width: 768px) {
+        .c_1 {width:8.33%}
+        .c_2 {width:16.66%}
+        .c_3 {width:25%}
+        .c_4 {width:33.33%}
+        .c_5 {width:41.66%}
+        .c_6 {width:50%}
+        .c_7 {width:58.33%}
+        .c_8 {width:66.66%}
+        .c_9 {width:75%}
+        .c_10 {width:83.33%}
+        .c_11 {width:91.66%}
+        .c_12 {width:100%}
+      }
+      header {
+          height: 768px;
+          padding:20px;
+          background-color: #e7ebef;
+          background-image: url("main_image.jpg");
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: 50% 50%;
+      }
+      #header{
+				position: relative;
+				overflow: auto;
+			}
+			#header_list{
+				position: relative;
+				overflow: auto;
+				float: right;
+				margin-bottom: 15px;
+				margin-top: 0px;
+				margin-right: 50px;
+				margin-left: 30px;
+			}
+			#header_list li{
+				color: #000000;
+				float: left;
+				list-style: none;
+				padding: 10px;
+			}
+			#header_title{
+				float: left;
+				margin-bottom: 15px;
+				margin-top: 0px;
+				margin-left: 50px;
+				margin-right: 50px;
+			}
+      .content_title{
+        color: #cdd4da;
+				font-size: 50px;
+				margin-left: 0px;
+				width: 500px;
+				margin-top: 95px;
+				margin-bottom: 95px;
+      }
+      #about_me{
+        width:100%;
+        margin-left: 75px;
+      }
+      .about_me_sub_title{
+        color: #ffc4b1;
+      }
+      .about_me_title{
+        color :#ffc4b1;
+        border-bottom:solid 2px #ffc4b1;
+      }
+      #content_list1{
+        position: relative;
+        overflow: auto;
+        margin:0px;
+        padding: 0px;
+        margin-bottom: 80px;
+      }
+      #content_list1 li{
+        display: block;
+        float: left;
+        list-style: none;
+      	width: 500px;
+        margin-left: 80px;
+      }
+      #about_me_a{
+        margin-left: 75px;
+        width: 580px;
+      }
+      #my_work{
+        width:100%;
+        margin-left: 75px;
+      }
+      #my_work li{
+        display: block;
+        float: left;
+        list-style: none;
+        width: 500px;
+        margin-left: 80px;
+        margin-right: 30px;
+        background-color: white;
+        margin-bottom: 50px;
+        width: 412px;
+        height: 312px;
+        margin-top: 30px;
+      }
+      #my_work li img{
+        width: 400px;
+      }
+      #my_work p {
+        color: #cccccc;
+      }
+      .content_list2_text{
+        color: #ffc4b1
+      }
+      #contact_me{
+        width:100%;
+        margin-left: 75px;
+        width:750px;
+        height:200px;
+        margin:20px 0 0 50px;
+        border:solid 2px #cccccc;
+        border-radius:20px;
+        padding: 20px 20px 20px 20px;
+      }
+      #main_footer{
 
-		<div id="main_navigation">
-			 <center>	<a href="index.html"><img src="main.jpg" /></a> </center>
-				<strong>
-				<a class="link_button" href="layout1.html">비용</a>&nbsp; &nbsp;
-				<a class="link_button" href="layout2.html">일정</a>&nbsp; &nbsp;
-				<a class="link_button" href="layout3.html">명소</a> &nbsp;
-				</strong>
-            <hr />
-		</div>
+      	color: #ff4e50;
+      	font-size: 10px;
+      	margin-top: 30px;
+      	margin-bottom: 20px;
+      }
+      #contact_me_a{
+        width:100%;
+        margin-left: 75px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <header class="c_12">
+      <div id="header">
+				<h2 id="header_title">YOUNGFOLIO</h2>
+					<ul id="header_list">
+						<li><a class="anchor1" href="#about_me">ABOUT ME</a></li>
+						<li><a class="anchor1" href="#my_work">MY WORK</a></li>
+						<li><a class="anchor1" href="#main_footer">CONTACT ME</a></li>
+					</ul>
+			</div>
+    </header>
+
+    <div id="about_me">
+      <h2 class="content_title">ABOUT ME</h2>
+      <ul id="content_list1">
+        <li>
+      <h3 class="about_me_title">프로필</h3>
+        <table>
+          <tr>
+            <td class="about_me_sub_title">이름</td>
+            <td>&nbsp; &nbsp; 안선영</td>
+          </tr>
+
+          <tr>
+            <td class="about_me_sub_title">생년월일</td>
+            <td>&nbsp; &nbsp; 1998년 12월 27일 (만 20세)</td>
+          </tr>
+
+          <tr>
+            <td class="about_me_sub_title">전화번호</td>
+            <td>&nbsp; &nbsp; 010-5892-7923</td>
+          </tr>
+
+          <tr>
+            <td class="about_me_sub_title">이메일</td>
+            <td>&nbsp; &nbsp; sun0_127@naver.com</td>
+          </tr>
+
+          <tr>
+            <td class="about_me_sub_title">주소</td>
+            <td>&nbsp; &nbsp; 경기도 의왕시 포일동</td>
+          </tr>
+        </table>
+      </li>
+        <li>
+      <h3 class="about_me_title">학력사항</h3>
+        <table>
+          <tr>
+            <td class="about_me_sub_title">2017.02</td>
+            <td>&nbsp; &nbsp; 백운고등학교 졸업</td>
+          </tr>
+
+          <tr>
+            <td class="about_me_sub_title">2017.03</td>
+            <td>&nbsp; &nbsp; 계원예술대학교 디지털미디어디자인과 입학</td>
+          </tr>
+
+          <tr>
+            <td class="about_me_sub_title">2019.03</td>
+            <td>&nbsp; &nbsp; 디지털미디어디자인과 기획 세부전공</td>
+          </tr>
+
+          <tr>
+            <td class="about_me_sub_title">2020.02</td>
+            <td>&nbsp; &nbsp; 계원예술대학교 디지털미디어디자인과 졸업예정</td>
+          </tr>
+        </table>
+      </li>
+
+    </ul>
+        </br>
+        <div id="about_me_a">
+        <h3 class="about_me_title">툴활용도</h3>
+          <table>
+            <tr>
+              <td class="about_me_sub_title">파워포인트</td>
+              <td>&nbsp; &nbsp; ★★★★★★★★★☆</td>
+              <td class="about_me_sub_title">&nbsp; &nbsp;포토샵</td>
+              <td>&nbsp; &nbsp; ★★★★★★☆☆☆☆</td>
+            </tr>
+
+            <tr>
+              <td class="about_me_sub_title">엑셀</td>
+              <td>&nbsp; &nbsp; ★★★★☆☆☆☆☆☆</td>
+              <td class="about_me_sub_title">&nbsp; &nbsp;애프터이팩트</td>
+              <td>&nbsp; &nbsp; ★★☆☆☆☆☆☆☆☆</td>
+            </tr>
+
+            <tr>
+              <td class="about_me_sub_title">한글</td>
+              <td>&nbsp; &nbsp; ★★★★★★★★☆☆</td>
+              <td class="about_me_sub_title">&nbsp; &nbsp;HTML</td>
+              <td>&nbsp; &nbsp; ★★★★★☆☆☆☆☆</td>
+            </tr>
+
+            <tr>
+              <td class="about_me_sub_title">일러스트</td>
+              <td>&nbsp; &nbsp; ★★★★★★★★☆☆</td>
+              <td class="about_me_sub_title">&nbsp; &nbsp;스케치</td>
+              <td>&nbsp; &nbsp; ★★★★★★★☆☆☆</td>
+            </tr>
+          </table>
+        </div>
+    </div>
+
+    <div id="my_work">
+      <h2 class="content_title">MY WORK</h2>
+      <p>웹퍼블리싱 수업 시간에 만든 사이트들입니다.</p>
+      <ul>
+        <li><a href="index8_21761066.html"><img src="index8.png"></a>
+        <h3 class="content_list2_text">로그인창</h3></li>
+      </ul>
+      <ul>
+        <li><a href="index10_21761066.html"><img src="index10.png"></a>
+        <h3 class="content_list2_text">가상기업사이트1</h3></li>
+      </ul>
+      <ul>
+        <li><a href="index11_21761066.html"><img src="index11.png"></a>
+        <h3 class="content_list2_text">가상기업사이트2</h3></li>
+      </ul>
+      <ul>
+        <li><a href="index12_21761066.html"><img src="index12.png"></a>
+        <h3 class="content_list2_text">여행갤러리</h3></li>
+      </ul>
+    </div>
+
+    <div id="contact_me_a">
+      <h2 class="content_title">CONTACT ME</h2>
+      <form id="contact_me">
+    <table>
+      <tr>
+        <td>이름 or 회사명</td>
+        <td><input type="text"></td>
+      </tr>
+
+      <tr>
+        <td>이메일</td>
+        <td><input type="text">@
+        <select>
+          <option>선택</option>
+          <option>naver.com</option>
+          <option>hanmail.net</option>
+          <option>gmail.com</option>
+          <option>직접입력</option>
+        </select></td>
+      </tr>
+
+      <tr>
+        <td>제목</td>
+        <td><input type="text"></td>
+      </tr>
+
+      <tr>
+        <td>내용</td>
+        <td><textarea rows="5" cols="80"></textarea></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td></td>
+        <td><button type="button">보내기</button></td>
+      </tr>
+    </table>
+  </form>
+    </div>
+
+    <footer>
+      <div id="main_footer">
+      <hr />
+        <p>
+          Kaywon University of Art and Design
+          <br />
+          Digital Media Design
+          <br />
+          Web Standard Publishing
+          <br />
+          21761066 An Seon Yeong
+        </p>
+  </div>
+    </footer>
 
 
-    <center>
-		<img src="index.jpg" width="1360px;" />
-		</center>
-
-		<div id="wrap">
-		<div id="main_footer">
-				<hr />
-					<p>
-						Kaywon University of Art and Design
-						<br />
-						Digital Media Design
-						<br />
-						Web Standard Publishing
-						<br />
-						21761066 An Seon Yeong
-					</p>
-					<img src="main_logo.jpg" />
-		</div>
-	</div>
-</body>
+  </body>
 </html>
